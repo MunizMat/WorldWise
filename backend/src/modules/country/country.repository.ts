@@ -1,17 +1,13 @@
 /* ------------ Clients ------------ */
-import { dateNagerClient } from '../../clients/dateNager';
-
-/* ------------ Types ------------ */
-import { GetAvailableCountriesOutput } from './country';
+import { CountriesNowClient } from '../../clients/countriesNow';
+import { DateNagerClient } from '../../clients/dateNager';
 
 export class CountryRepository {
   static async findAll() {
     try {
-      const { data } = await dateNagerClient.get<GetAvailableCountriesOutput>(
-        '/AvailableCountries',
-      );
+      const countries = await DateNagerClient.listAvailableCountries();
 
-      return data;
+      return countries;
     } catch (error) {
       console.error(error);
 
@@ -20,6 +16,28 @@ export class CountryRepository {
   }
 
   static async findByCountryCode(countryCode: string) {
-    console.log(countryCode);
+    try {
+      const { borders, commonName, officialName, region } =
+        await DateNagerClient.getCountryInfo(countryCode);
+
+      const [flagImageData, populationData] = await Promise.all([
+        CountriesNowClient.getCountryFlagImage(countryCode),
+        CountriesNowClient.getCountryPopulationData(commonName),
+      ]);
+
+      return {
+        flag: flagImageData.flag,
+        countryCode,
+        populationData: populationData.populationCounts,
+        commonName,
+        officialName,
+        borders,
+        region,
+      };
+    } catch (error) {
+      console.error(error);
+
+      throw error;
+    }
   }
 }

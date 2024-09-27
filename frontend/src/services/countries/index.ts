@@ -2,7 +2,11 @@
 import { api } from '../api';
 
 /* ------------- Types ----------- */
-import { ListCountriesOutput } from './types';
+import {
+  GetCountryDataInput,
+  GetCountryDataOutput,
+  ListCountriesOutput,
+} from './types';
 
 const listCountries = async () => {
   try {
@@ -16,4 +20,18 @@ const listCountries = async () => {
   }
 };
 
-export { listCountries };
+const getCountryData = async ({ countryCode }: GetCountryDataInput) => {
+  try {
+    const { data } = await api.get<GetCountryDataOutput>(
+      `/countries/${countryCode}`
+    );
+
+    return data;
+  } catch (error) {
+    console.error(error);
+
+    throw error;
+  }
+};
+
+export { listCountries, getCountryData };
