@@ -7,6 +7,9 @@ import { CountryListingModule } from '../src/modules/CountryListing';
 /* --------------- Services ---------------- */
 import { listCountries } from '../src/services/countries';
 
+/* --------------- Types ---------------- */
+import { CountryData } from '../src/types/Country';
+
 interface PageProps {
   countries: CountryData[];
 }

@@ -6,6 +6,8 @@ import { DetailedCountryData } from '../../../src/types/Country';
 
 /* -------------- Services -------------- */
 import { getCountryData } from '../../../src/services/countries';
+
+/* -------------- Modules -------------- */
 import { CountryDetailsModule } from '../../../src/modules/CountryDetails';
 
 export async function getServerSideProps({ query }: GetServerSidePropsContext) {

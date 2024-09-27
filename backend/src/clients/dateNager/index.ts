@@ -10,7 +10,7 @@ import {
 
 config();
 
-export const client = axios.create({
+const client = axios.create({
   baseURL: process.env.DATE_NAGER_API_URL,
 });
 
