@@ -1,37 +1,16 @@
 /* -------------- External ------------- */
 import { Flex, List, Text, Title } from '@mantine/core';
 import Link from 'next/link';
+import { FC } from 'react';
 
 /* -------------- Styles ------------- */
 import styles from './CountryListing.module.css';
 
-interface CountryData {
-  countryCode: string;
-  name: string;
+interface Props {
+  countries: CountryData[];
 }
 
-const mockData: CountryData[] = [
-  { countryCode: 'SE', name: 'Sweden' },
-  { countryCode: 'SG', name: 'Singapore' },
-  { countryCode: 'SI', name: 'Slovenia' },
-  { countryCode: 'SJ', name: 'Svalbard and Jan Mayen' },
-  { countryCode: 'SK', name: 'Slovakia' },
-  { countryCode: 'SM', name: 'San Marino' },
-  { countryCode: 'SR', name: 'Suriname' },
-  { countryCode: 'SV', name: 'El Salvador' },
-  { countryCode: 'TN', name: 'Tunisia' },
-  { countryCode: 'TR', name: 'Turkey' },
-  { countryCode: 'UA', name: 'Ukraine' },
-  { countryCode: 'US', name: 'United States' },
-  { countryCode: 'UY', name: 'Uruguay' },
-  { countryCode: 'VA', name: 'Vatican City' },
-  { countryCode: 'VE', name: 'Venezuela' },
-  { countryCode: 'VN', name: 'Vietnam' },
-  { countryCode: 'ZA', name: 'South Africa' },
-  { countryCode: 'ZW', name: 'Zimbabwe' },
-];
-
-export const CountryListingModule = () => {
+export const CountryListingModule: FC<Props> = ({ countries }) => {
   return (
     <Flex gap={20} p={20} justify="center" align="center" direction="column">
       <Flex direction="column" w="100%" align="center" justify="center">
@@ -45,7 +24,7 @@ export const CountryListingModule = () => {
       </Flex>
 
       <List className={styles.list}>
-        {mockData.map(({ countryCode, name }) => (
+        {countries.map(({ countryCode, name }) => (
           <List.Item fz={18} key={countryCode}>
             <Link href={`/country/${countryCode}`}>
               {name} - {countryCode}
