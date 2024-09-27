@@ -1,0 +1,25 @@
+.list {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    a {
+        text-decoration: none;
+        color: unset;
+    }
+
+    & > li span {
+        transition: all 0.4s ease;
+        cursor: pointer;
+    }
+
+    & > li:hover {
+        span {
+            color: rgb(130, 130, 130);
+        }
+    }
+}
