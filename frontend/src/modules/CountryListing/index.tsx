@@ -1,7 +1,12 @@
 /* -------------- External ------------- */
 import { Flex, List, Text, Title } from '@mantine/core';
-import Link from 'next/link';
 import { FC } from 'react';
+
+/* -------------- Types ------------- */
+import { CountryData } from '../../types/Country';
+
+/* -------------- Components ------------- */
+import { ListLink } from '../../components/ListLink';
 
 /* -------------- Styles ------------- */
 import styles from './CountryListing.module.css';
@@ -25,11 +30,11 @@ export const CountryListingModule: FC<Props> = ({ countries }) => {
 
       <List className={styles.list}>
         {countries.map(({ countryCode, name }) => (
-          <List.Item fz={18} key={countryCode}>
-            <Link href={`/country/${countryCode}`}>
-              {name} - {countryCode}
-            </Link>
-          </List.Item>
+          <ListLink
+            key={countryCode}
+            href={`/country/${countryCode}`}
+            text={`${name} - ${countryCode}`}
+          />
         ))}
       </List>
     </Flex>
