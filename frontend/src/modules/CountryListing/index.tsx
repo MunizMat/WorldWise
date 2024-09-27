@@ -23,8 +23,8 @@ export const CountryListingModule: FC<Props> = ({ countries }) => {
           WorldWise
         </Title>
 
-        <Text fw={300} fz={30}>
-          Uncover the Stories Behind Every Country
+        <Text className={styles.subtitle}>
+          Uncover Information Behind Every Country
         </Text>
       </Flex>
 

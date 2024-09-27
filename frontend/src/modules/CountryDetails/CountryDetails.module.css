@@ -1,0 +1,51 @@
+.container {
+    padding: 2.2rem;
+
+    flex-direction: column;
+    gap: 1.2rem;
+
+    @media (max-width: 600px) {
+        padding-inline: 1rem;
+    }
+}
+
+.back_link {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    text-decoration: none;
+
+    color: black;
+    transition: all 0.4s ease;
+
+    &:hover {
+        color: gray;
+    }
+}
+
+.content_container {
+    gap: 1rem;
+    
+    margin-top: 2.2rem;
+
+    width: 100%;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+}
+
+.borders_container {
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
+}
+
+.chart_container {
+    width: 90%;
+    
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
+}
