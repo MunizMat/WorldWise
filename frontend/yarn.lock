@@ -140,44 +140,6 @@
     react-textarea-autosize "8.5.2"
     type-fest "^3.13.1"
 
-"@mantine/dates@^7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@mantine/dates/-/dates-7.1.2.tgz#ab9e0e7c2033b274e44be3c515dd8f2e5a5d9e3b"
-  integrity sha512-JE0Zf37NPH5Lt5AoHDORoWxiR6J8ozwTCWnh6ozwZNpeH5h/YpssS9mj4JX7hb4WytT5dr1ylOY1Zt5fDRM3+Q==
-  dependencies:
-    clsx "2.0.0"
-
-"@mantine/form@^7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@mantine/form/-/form-7.1.0.tgz#52f831cbbddfbcaa8f49fa85969029b8da59c36d"
-  integrity sha512-Iu7Ecs2kFdvwakpvInOlmKRdMxy8XKiDAs9SjuVuRs4w/MWNEqWW6ecj1LGByfr2hyoIMyX+lhOQ/7IxgEaFjg==
-  dependencies:
-    fast-deep-equal "^3.1.3"
-    klona "^2.0.5"
-
-"@mantine/hooks@7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.1.0.tgz#44e43df2eff9785296b8507048fe425bd01091ec"
-  integrity sha512-XW8qYNoS81bIWmdI7yZV8BmBkTtr0//3fyBJ2dcKRSKWY5HVNPkLDXPQk9/E4bpQIRmufDGQ6pLmUfY+0VjO3g==
-
-"@mantine/modals@^7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@mantine/modals/-/modals-7.1.0.tgz#880620a5f602f797427652943be535cfa519780e"
-  integrity sha512-FBRzrYcZ+Jdyvi/nzmHcjr3hSngNjk9kVx+U0e80YuQhn9hpWqChtC7bBGcnVamzF7VkM835FW0jR6AVbHLrlw==
-
-"@mantine/notifications@^7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.1.0.tgz#ca7ce99410c75ae9d7eba21eeb243afeae9ae4d2"
-  integrity sha512-ck6w/vugFSsmgSO41yOqYYcvfBTSxMvKJOvJJf+uWYXP+5OPP5aEzE5jJVJE2dS792bF3npGhBwVhRg56n/pAA==
-  dependencies:
-    "@mantine/store" "7.1.0"
-    react-transition-group "4.4.5"
-
-"@mantine/store@7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.1.0.tgz#81e64631e71dfb5098a5d3d9831c70f15cb23bc5"
-  integrity sha512-WmU1jxsHWex5gcoAoB6C/vyVbDiWp6k6iroXHRWIqzd7vQ9SiLzXNygLTlilwW4HwkkJZGUsskSbwzFo+oqiSw==
-
 "@next/env@13.4.4":
   version "13.4.4"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.4.4.tgz#46b620f6bef97fe67a1566bf570dbb791d40c50a"
@@ -823,11 +785,6 @@ confusing-browser-globals@^1.0.10:
   resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.11.tgz#ae40e9b57cdd3915408a2805ebd3a5585608dc81"
   integrity sha512-JsPKdmh8ZkmnHxDk55FZ1TqVLvEQTvoByJZRN9jzI0UjxK/QgAmsphz7PGtqgPieQZ/CQcHWXCR7ATDNhGe+YA==
 
-cookie@^0.4.1:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.2.tgz#0e41f24de5ecf317947c82fc789e06a884824432"
-  integrity sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==
-
 core-js-pure@^3.20.2:
   version "3.24.1"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.24.1.tgz#8839dde5da545521bf282feb7dc6d0b425f39fd3"
@@ -927,11 +884,6 @@ damerau-levenshtein@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz#b43d286ccbd36bc5b2f7ed41caf2d0aba1f8a6e7"
   integrity sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==
-
-dayjs@^1.11.10:
-  version "1.11.10"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.10.tgz#68acea85317a6e164457d6d6947564029a6a16a0"
-  integrity sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==
 
 debug@^2.6.9:
   version "2.6.9"
@@ -2190,11 +2142,6 @@ json5@^1.0.2:
     array-includes "^3.1.5"
     object.assign "^4.1.2"
 
-klona@^2.0.5:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.6.tgz#85bffbf819c03b2f53270412420a4555ef882e22"
-  integrity sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==
-
 language-subtag-registry@~0.3.2:
   version "0.3.22"
   resolved "https://registry.yarnpkg.com/language-subtag-registry/-/language-subtag-registry-0.3.22.tgz#2e1500861b2e457eba7e7ae86877cbd08fa1fd1d"
@@ -2343,14 +2290,6 @@ next@13.4.4:
     "@next/swc-win32-arm64-msvc" "13.4.4"
     "@next/swc-win32-ia32-msvc" "13.4.4"
     "@next/swc-win32-x64-msvc" "13.4.4"
-
-nookies@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/nookies/-/nookies-2.5.2.tgz#cc55547efa982d013a21475bd0db0c02c1b35b27"
-  integrity sha512-x0TRSaosAEonNKyCrShoUaJ5rrT5KHRNZ5DwPCuizjgrnkpE5DRf3VL7AyyQin4htict92X1EQ7ejDbaHDVdYA==
-  dependencies:
-    cookie "^0.4.1"
-    set-cookie-parser "^2.4.6"
 
 object-assign@^4.1.1:
   version "4.1.1"
@@ -2733,7 +2672,7 @@ react-textarea-autosize@8.5.2:
     use-composed-ref "^1.3.0"
     use-latest "^1.2.1"
 
-react-transition-group@4.4.5, react-transition-group@^4.4.5:
+react-transition-group@^4.4.5:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
   integrity sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==
@@ -2911,11 +2850,6 @@ semver@^7.5.4:
   integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
   dependencies:
     lru-cache "^6.0.0"
-
-set-cookie-parser@^2.4.6:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/set-cookie-parser/-/set-cookie-parser-2.6.0.tgz#131921e50f62ff1a66a461d7d62d7b21d5d15a51"
-  integrity sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==
 
 set-function-name@^2.0.0, set-function-name@^2.0.1:
   version "2.0.1"
