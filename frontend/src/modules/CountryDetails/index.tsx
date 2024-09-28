@@ -33,7 +33,13 @@ export const CountryDetailsModule: FC<Props> = ({ countryData }) => {
       <Flex gap={20}>
         <Title fz={40}>{commonName}</Title>
 
-        <Image alt={`${commonName} flag`} src={flag} width={180} height={90} />
+        <Image
+          style={{ objectFit: 'cover' }}
+          alt={`${commonName} flag`}
+          src={flag}
+          width={180}
+          height={90}
+        />
       </Flex>
 
       <Flex className={styles.content_container}>

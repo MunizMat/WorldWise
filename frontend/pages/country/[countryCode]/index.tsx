@@ -9,6 +9,7 @@ import { getCountryData } from '../../../src/services/countries';
 
 /* -------------- Modules -------------- */
 import { CountryDetailsModule } from '../../../src/modules/CountryDetails';
+import { CountryNotFoundModule } from '../../../src/modules/CountryNotFound';
 
 export async function getServerSideProps({ query }: GetServerSidePropsContext) {
   if (!query || !query.countryCode)
@@ -20,7 +21,7 @@ export async function getServerSideProps({ query }: GetServerSidePropsContext) {
     };
 
   const countryCode = query.countryCode as string;
-  let countryData: DetailedCountryData;
+  let countryData: DetailedCountryData | null;
 
   try {
     const { country } = await getCountryData({ countryCode });
@@ -38,7 +39,7 @@ export async function getServerSideProps({ query }: GetServerSidePropsContext) {
 
   return {
     props: {
-      countryData,
+      countryData: countryData || null,
     },
   };
 }
@@ -46,5 +47,7 @@ export async function getServerSideProps({ query }: GetServerSidePropsContext) {
 export default function Page({
   countryData,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
+  if (!countryData) return <CountryNotFoundModule />;
+
   return <CountryDetailsModule countryData={countryData} />;
 }

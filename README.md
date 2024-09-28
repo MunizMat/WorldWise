@@ -40,7 +40,7 @@ cd ../frontend
 ```shell 
 yarn install && yarn build && yarn start
 ```
-The project will be accessible at http://localhost:3001
+The project will be accessible at http://localhost:3000
 
 ## Technologies
 - Typescript
