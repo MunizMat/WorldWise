@@ -1,4 +1,4 @@
-WorldWise
+# WorldWise
 
 WorldWise is a simple application that aggregates information about a set of countries. The application consists of a frontend Next.js application to display the countries and their data, and a backend express application.
 
