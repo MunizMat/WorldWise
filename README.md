@@ -23,7 +23,7 @@ git clone https://github.com/MunizMat/WorldWise.git
 
 2. Navigate to the 'backend' directory:
 ```shell 
-cd backend
+cd WorldWise/backend
 ```
 
 3. Install the dependencies, build the backend application, and run it:
@@ -31,9 +31,9 @@ cd backend
 yarn install && yarn build && yarn start
 ```
 
-4. Navigate to the frontend directory:
+4. In a new terminal window, navigate to the frontend directory:
 ```shell 
-cd ../frontend
+cd frontend
 ```
  
 5. Install the dependencies, build the frontend application, and run it:
